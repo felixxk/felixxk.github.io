@@ -1,0 +1,95 @@
+.container-services {
+  border: solid;
+  border-size: 8px;
+  content-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar .container {
+  position: relative;
+}
+
+.brand {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menu-item {
+  margin: 0;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.menu-item a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card-header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card-header a:hover {
+  text-decoration: underline;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-link {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

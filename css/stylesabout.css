@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background: url('../images/background_index.jpg') no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center center;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.navbar .container {
+  position: relative;
+}
+
+.brand {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menu-item {
+  margin: 0;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.menu-item a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  font-size: 14px;
+  color: #333;
+}
+
+main
+{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#firstp {
+  margin-top: 50px;
+}
+
+.paragraphs {
+  margin-left: 5%;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
