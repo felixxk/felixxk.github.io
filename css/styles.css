@@ -1,39 +1,44 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   background: url('../images/background_index.jpg') no-repeat center center fixed;
-  background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
   background-position: center center;
+  display: flex;
+  flex-direction: column;
 }
 
+header,
+footer {
+  width: 100%;
+}
+
+/* Navbar */
 .navbar {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
-  text-align: center;
-  position: relative;
 }
 
 .navbar .container {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand {
   font-size: 1.5em;
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
 }
 
+/* Dropdown Menu */
 .dropdown {
-  display: inline-block;
   position: relative;
 }
 
@@ -42,13 +47,14 @@ body {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 90%;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   display: none;
   background-color: #333;
   border-radius: 5px;
   text-align: center;
+  min-width: 150px;
 }
 
 .menu-item {
@@ -70,99 +76,87 @@ body {
   display: block;
 }
 
-.content {
+/* Main Content */
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for Paragraph and Button */
+.center-container {
+  text-align: center;
+  margin: auto;
+}
+
+/* Paragraphs */
+.paragraphs {
+  max-width: 800px;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+}
+
+/* Buttons */
+/* Buttons */
+.btnchange,
+.btn-contact {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Smooth transition for all properties */
+}
+
+.btnchange {
+  display: block;
   margin: 20px auto;
-  max-width: 80%;
+  text-align: center;
+  /* Ensures text within button is centered */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #333;
+/* Hover and Click States */
+.btnchange:hover,
+.btnchange:active,
+.btn-contact:hover,
+.btn-contact:active {
+  background-color: #444;
+  padding: 10px 30px;
+  /* Expands padding for a larger button */
+  transform: scale(1.05);
+  /* Slightly increases the size of the button */
 }
 
-p {
-  line-height: 1.6;
-  margin: 20px 0;
+.btn-contact {
+  display: inline-block;
+  width: 200px;
+  text-decoration: none;
+  margin: 20px auto;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-footer {
-  background-color: #f0f0f0;
-  text-align: center;
   padding: 10px 0;
   margin-top: auto;
+  width: 100%;
   font-size: 14px;
-  color: #333;
 }
 
-.paragraphs {
-  margin-left: 5%;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-#firstp {
-  margin-top: 50px;
-}
-
-.btnchange {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  /* Centers the button horizontally */
-}
-
-.logo
-{
+/* Logo */
+.logo {
   height: 50px;
   width: 50px;
-  margin-left: 500px;
-}
-
-.btn-contact
-{
-  color: white;
-  text-align: center;
-  display: block;
-  margin-bottom: 50px;
-  background-color: #333;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin: 0 auto;
-  width: 200px;
-}
-
-a.btn-contact {
-  text-decoration: none;
-}
-
-/* Ensure the button looks consistent */
-.btn-contact {
-  appearance: none;
-}
-
-[class*="btn"] {
-  background-image: url("images/background_index.jpg");
+  margin-right: 10px;
 }
